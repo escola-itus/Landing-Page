@@ -1,0 +1,300 @@
+
+:root {
+  --background: #f0f2f5;
+  --blue: #07224B;
+  --blue-light: #113C7B;
+  --green: #269912;
+  --text-title: #363F5F;
+  --text-body: #969CB3;
+  --shape: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* front-size: 16px (Desktop) */
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media (max-width: 720) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+/* REM = 1rem = 16px */
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disbbled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+header {
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem .8rem .5rem;
+}
+
+.logo {
+  width: 8rem;
+}
+
+ul {
+  height: 4rem;
+  display: flex;  
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+} a:last-child {
+  margin-right: 0;
+}
+
+li {
+  border-bottom: .15rem solid transparent;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  background-image: linear-gradient(var(--green), var(--green));
+  background-size: 0 .15rem, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+} li:hover {
+  background-size: 100% .15rem, auto;
+} li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-title);
+} li:last-child {
+  margin-right: 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  --width: 12rem;
+  --height: 3rem;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  background: rgba(38, 153, 18, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+button .btn-text, button .icon-container {
+  position: relative;
+  z-index: 2;
+}
+button .icon-container {
+  --icon-size: 25px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 15px;
+  transition: transform 500ms ease;
+}
+button .icon-container .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 500ms ease, opacity 250ms ease;
+}
+button .icon-container .icon--left {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+button .icon-container .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  border-radius: var(--height);
+  z-index: 1;
+  transition: transform 500ms ease;
+}
+button:hover::after {
+  transform: translateX(75%);
+}
+button:hover .icon-container {
+  transform: translateX(100%);
+}
+button:hover .icon-container .icon--left {
+  transform: translateX(0);
+  opacity: 1;
+}
+button:hover .icon-container .icon--right {
+  transform: translateX(200%);
+  opacity: 0;
+}
+.support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+}
+.support a:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Neon Button */
+/* 
+.btn-go {
+  position: relative;
+  display: inline-block;
+  padding: .8rem 1rem;
+  color: var(--green);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden; 
+}
+.btn-go:hover{
+  background: var(--green);
+  color: var(--background);
+  box-shadow: 0 0 5px var(--green),
+              0 0 25px var(--green),
+              0 0 50px var(--green),
+              0 0 200px var(--green);
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.btn-go:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+.btn-go:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+.btn-go span{
+  position: absolute;
+  display: block;
+}
+.btn-go span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,var(--green));
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.btn-go span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,var(--green));
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+.btn-go span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,var(--green));
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+
+.btn-go span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,var(--green));
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+} */
