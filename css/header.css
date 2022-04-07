@@ -156,7 +156,7 @@ button {
   min-height: var(--height);
   border-radius: var(--height);
   color: #fff;
-  background: rgba(38, 153, 18, 0.3);
+  background: var(--green-light);
   cursor: pointer;
   overflow: hidden;
   display: flex;
