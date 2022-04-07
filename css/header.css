@@ -1,5 +1,13 @@
-header {
+#header {
   width: 100%;
+  position: fixed;
+  transition: all .6s ease-in;
+} #header.active {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#header.active .header-container {
+  padding: 1rem .8rem .8rem;
 }
 
 .header-container {
@@ -8,7 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem .8rem .5rem;
+  padding: 2rem .8rem;
+  transition: all .6s ease-in;
 }
 
 .logo {

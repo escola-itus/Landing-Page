@@ -22,3 +22,9 @@
 .my-float{
 	margin-top:16px;
 }
+
+@media (max-width: 1080px) {
+  .float {
+		left: 40px;
+	}
+}
