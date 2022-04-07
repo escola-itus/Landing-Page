@@ -1,4 +1,5 @@
 @import "header.css";
+@import "whatsapp.css";
 
 :root {
   --background: #f0f2f5;
@@ -8,6 +9,8 @@
   --text-title: #363F5F;
   --text-body: #969CB3;
   --shape: #FFFFFF;
+  --whatsapp: #25d366;
+  --whatsapp_dark: #1ba84f;
 }
 
 * {
