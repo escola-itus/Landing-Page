@@ -1,0 +1,247 @@
+header {
+  width: 100%;
+}
+
+.header-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem .8rem .5rem;
+}
+
+.logo {
+  width: 6.5rem;
+}
+
+ul {
+  /* height: 4rem; */
+  display: flex;  
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+} a:last-child {
+  margin-right: 0;
+}
+
+li {
+  border-bottom: .15rem solid transparent;
+  /* height: 4rem; */
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(var(--green), var(--green));
+  background-size: 0 .15rem, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+} li:hover {
+  background-size: 100% .15rem, auto;
+} li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-title);
+} li:last-child {
+  margin-right: 0;
+}
+
+.nav-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+  height: 8vh;
+}
+
+.nav-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background: var(--blue);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in, width 0.3s ease-in;
+}
+
+.nav-list li {
+  margin-left: 0;
+  opacity: 0;
+}
+
+.nav-list li a {
+  color: var(--green);
+}
+
+.mobile-menu {
+  display: block;
+  z-index: 3;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: var(--blue);
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.mobile-menu:hover {
+  cursor: pointer;
+}
+
+.nav-list.active {
+  width: 50vw;
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.mobile-menu.active div {
+  background: var(--green);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  --width: 12rem;
+  --height: 3rem;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  background: rgba(38, 153, 18, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .btn-text, button .icon-container {
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+button .icon-container {
+  --icon-size: 25px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 15px;
+  transition: transform 500ms ease;
+}
+
+button .icon-container .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 500ms ease, opacity 250ms ease;
+}
+
+button .icon-container .icon--left {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+
+button .icon-container .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  border-radius: var(--height);
+  z-index: 1;
+  transition: transform 500ms ease;
+}
+
+button:hover::after {
+  transform: translateX(75%);
+}
+
+button:hover .icon-container {
+  transform: translateX(65%);
+}
+
+button:hover .icon-container .icon--left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+button:hover .icon-container .icon--right {
+  transform: translateX(200%);
+  opacity: 0;
+}
+
+.support {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+} .support a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+} .support a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1080px) {
+  .nav-desktop, .btn-container {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+}

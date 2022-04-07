@@ -1,3 +1,4 @@
+@import "header.css";
 
 :root {
   --background: #f0f2f5;
@@ -13,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
 }
 
 /* front-size: 16px (Desktop) */
@@ -23,7 +25,7 @@
   }
 }
 
-@media (max-width: 720) {
+@media (max-width: 720px) {
   html {
     font-size: 87.5%; /* 14px */
   }
@@ -33,6 +35,7 @@
 body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 button {
@@ -44,155 +47,6 @@ button {
   cursor: not-allowed;
 }
 
-header {
-  width: 100%;
-}
-
-.header-container {
-  max-width: 1120px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem .8rem .5rem;
-}
-
-.logo {
-  width: 8rem;
-}
-
-ul {
-  height: 4rem;
-  display: flex;  
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  
-} a:last-child {
-  margin-right: 0;
-}
-
-li {
-  border-bottom: .15rem solid transparent;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  background-image: linear-gradient(var(--green), var(--green));
-  background-size: 0 .15rem, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  transition: all .2s ease-out;
-} li:hover {
-  background-size: 100% .15rem, auto;
-} li a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-title);
-} li:last-child {
-  margin-right: 0;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button {
-  --width: 12rem;
-  --height: 3rem;
-  border: 0;
-  position: relative;
-  min-width: var(--width);
-  min-height: var(--height);
-  border-radius: var(--height);
-  color: #fff;
-  background: rgba(38, 153, 18, 0.3);
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-}
-button .btn-text, button .icon-container {
-  position: relative;
-  z-index: 2;
-}
-button .icon-container {
-  --icon-size: 25px;
-  position: relative;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  margin-left: 15px;
-  transition: transform 500ms ease;
-}
-button .icon-container .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  transition: transform 500ms ease, opacity 250ms ease;
-}
-button .icon-container .icon--left {
-  transform: translateX(-200%);
-  opacity: 0;
-}
-button .icon-container .icon svg {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
-}
-button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--green);
-  border-radius: var(--height);
-  z-index: 1;
-  transition: transform 500ms ease;
-}
-button:hover::after {
-  transform: translateX(75%);
-}
-button:hover .icon-container {
-  transform: translateX(100%);
-}
-button:hover .icon-container .icon--left {
-  transform: translateX(0);
-  opacity: 1;
-}
-button:hover .icon-container .icon--right {
-  transform: translateX(200%);
-  opacity: 0;
-}
-.support {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px;
-  display: flex;
-}
-.support a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 1.8rem;
-  backface-visibility: hidden;
-  transition: all 150ms ease;
-}
-.support a:hover {
-  transform: scale(1.1);
-}
 
 
 
@@ -298,3 +152,12 @@ button:hover .icon-container .icon--right {
       bottom: 100%;
   }
 } */
+
+@media (max-width: 1080px) {
+  .nav-desktop, .btn-container {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+}

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>ITUS Escola</title>
   </head>
@@ -11,11 +14,24 @@
     <header>
       <div class="header-container">
         <img alt="ITUS - Logo" class="logo" src="./assets/logo.svg">
-        <nav>
+        <nav class="nav-desktop">
           <ul>
             <li><a href="#about">Sobre nós</a></li>
             <li><a href="#how">Como funciona?</a></li>
             <li><a href="#feedback">Alunos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-mobile">
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#about">Início</a></li>
+            <li><a href="#how">Sobre</a></li>
+            <li><a href="#feedback">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
@@ -53,7 +69,8 @@
   </svg>
   
   <div class="support">
-    <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
-    <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+    <a href="https://twitter.com/DevLoop01" title="Seta" target="_blank"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://dribbble.com/devloop01" title="Seta" target="_blank"><i class="fab fa-dribbble"></i></a>
   </div>
+  <script type="module" src="./scripts/main.js"></script>
 </html>
