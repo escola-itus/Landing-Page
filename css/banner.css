@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.section-container {
+#banner .section-container {
   width: 100%;
   height: 100%;
   padding: 10vh 1rem 0;

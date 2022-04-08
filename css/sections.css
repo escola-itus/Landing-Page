@@ -1,0 +1,75 @@
+.anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 0;
+  margin-top: -5rem; 
+  background-color: transparent;
+  z-index: -1;
+}
+
+.section-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  text-align: center;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.section-container h2 {
+  font-family: 'Gagalin';
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.section-container p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: var(--text-body);
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 2rem;
+  padding: 0rem 1.5rem 1rem;
+  border: 2px solid transparent;
+  width: 15rem;
+  height: 13.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+  transition: all .3s ease-in;
+}
+.card:hover {
+  cursor: pointer;
+  border-color: var(--green);
+}
+
+.card lottie-player {
+  width: 8rem;
+}
+
+.card.small lottie-player {
+  width: 12rem;
+}
+
+.card h3 {
+  color: var(--blue);
+  position: absolute;
+  bottom: .7rem;
+}

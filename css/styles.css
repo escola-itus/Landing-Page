@@ -1,6 +1,8 @@
 @import "header.css";
 @import "whatsapp.css";
 @import "banner.css";
+@import "sections.css";
+@import "modal.css";
 
 @font-face {
   font-family: 'Gagalin';
@@ -58,11 +60,16 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 /* REM = 1rem = 16px */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   height: 500vh;
+  position: relative;
 }
 
 button {
