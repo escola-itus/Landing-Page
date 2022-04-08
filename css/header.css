@@ -1,23 +1,29 @@
 #header {
   width: 100%;
   position: fixed;
+  height: 10vh;
+  padding: 2rem .8rem;
+  z-index: 3;
   transition: all .6s ease-in;
+  background-color: var(--background);
 } #header.active {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-#header.active .header-container {
-  padding: 1rem .8rem .8rem;
 }
 
 .header-container {
   max-width: 1120px;
   margin: 0 auto;
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem .8rem;
   transition: all .6s ease-in;
+}
+
+#header.active {
+  padding: 1rem .8rem .8rem;
+  height: 8vh;
+  
 }
 
 .logo {
@@ -147,7 +153,7 @@ li {
   align-items: center;
 }
 
-button {
+.btn {
   --width: 12rem;
   --height: 3rem;
   border: 0;
@@ -164,13 +170,13 @@ button {
   align-items: center;
 }
 
-button .btn-text, button .icon-container {
+.btn .btn-text, .btn .icon-container {
   font-size: 1.2rem;
   position: relative;
   z-index: 2;
 }
 
-button .icon-container {
+.btn .icon-container {
   --icon-size: 25px;
   position: relative;
   width: var(--icon-size);
@@ -179,7 +185,7 @@ button .icon-container {
   transition: transform 500ms ease;
 }
 
-button .icon-container .icon {
+.btn .icon-container .icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -188,18 +194,18 @@ button .icon-container .icon {
   transition: transform 500ms ease, opacity 250ms ease;
 }
 
-button .icon-container .icon--left {
+.btn .icon-container .icon--left {
   transform: translateX(-200%);
   opacity: 0;
 }
 
-button .icon-container .icon svg {
+.btn .icon-container .icon svg {
   width: 100%;
   height: 100%;
   fill: #fff;
 }
 
-button::after {
+.btn::after {
   content: "";
   position: absolute;
   left: 0;
@@ -212,20 +218,20 @@ button::after {
   transition: transform 500ms ease;
 }
 
-button:hover::after {
+.btn:hover::after {
   transform: translateX(75%);
 }
 
-button:hover .icon-container {
+.btn:hover .icon-container {
   transform: translateX(65%);
 }
 
-button:hover .icon-container .icon--left {
+.btn:hover .icon-container .icon--left {
   transform: translateX(0);
   opacity: 1;
 }
 
-button:hover .icon-container .icon--right {
+.btn:hover .icon-container .icon--right {
   transform: translateX(200%);
   opacity: 0;
 }

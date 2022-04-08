@@ -1,5 +1,11 @@
 @import "header.css";
 @import "whatsapp.css";
+@import "banner.css";
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url('../assets/Gagalin-Regular.ttf') format('truetype');
+}
 
 :root {
   --background: #f0f2f5;
@@ -56,7 +62,7 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  height: 150vh;
+  height: 500vh;
 }
 
 button {
