@@ -88,7 +88,6 @@ form {
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  margin-top: 2.5rem;
 }
 
 .wrapper-inputs {
@@ -139,8 +138,24 @@ form {
   left: 0.8rem;
 }
 
+.calendly-mobile {
+  display: none;
+}
+
 @media (max-width: 1080px) {
   .section-container h2 {
     width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  form {
+    margin-top: 2.5rem;
+  }
+  .calendly-desktop {
+    display: none;
+  }
+  .calendly-mobile {
+    display: block;
   }
 }
