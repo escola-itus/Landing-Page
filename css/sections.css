@@ -19,15 +19,23 @@
 
 .section-container h2 {
   font-family: 'Gagalin';
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--blue);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-container span {
+  font-family: 'Gagalin';
+  font-size: 2.5rem;
+  color: var(--green);
 }
 
 .section-container p {
   width: 75%;
   margin: 0 auto;
-  font-size: 1rem;
-  margin-top: 1rem;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
   color: var(--text-body);
 }
 
@@ -38,7 +46,7 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  margin: 2rem auto 0;
+  margin: 2rem auto 1.5rem;
 }
 .card {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -72,4 +80,67 @@
   color: var(--blue);
   position: absolute;
   bottom: .7rem;
+}
+
+form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  position: relative;
+  width: 48%;
+}
+
+.form__input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid var(--blue);
+  border-radius: 1.25rem;
+  color: var(--blue);
+  outline: none;
+  padding: .8rem;
+  background: none;
+  font-size: 1rem;
+}
+.form__input:hover {
+  border-color: var(--green-light);
+}
+.form__input:focus {
+  border-color: var(--green);
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: .8rem;
+  padding: 0 .5rem;
+  color: var(--blue);
+  cursor: text;
+  transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+  background-color: var(--background);
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+@media (max-width: 1080px) {
+  .section-container h2 {
+    width: 100%;
+  }
 }
