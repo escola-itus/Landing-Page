@@ -6,7 +6,7 @@ let slidesPerView = body.offsetWidth > 550 ? 2 : 1
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
@@ -14,6 +14,7 @@ const swiper = new Swiper('.swiper', {
     type: 'bullets'
   },
   slidesPerView,
+  loopedSlides: null,
   spaceBetween: 30,
 
   // Navigation arrows
@@ -25,6 +26,6 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
-    draggable: true,
+    draggable: true
   },
 });

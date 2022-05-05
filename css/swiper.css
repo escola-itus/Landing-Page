@@ -18,6 +18,14 @@
   display: none;
 }
 
+.swiper-button-prev {
+  color: var(--green) !important;
+}
+
+.swiper-button-next {
+  color: var(--green) !important;
+}
+
 .video {
   border-top-left-radius: .8rem;
   border-top-right-radius: .8rem;
