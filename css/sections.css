@@ -39,6 +39,10 @@
   color: var(--text-body);
 }
 
+.problems img {
+  transform: scale(.6);
+}
+
 .problems {
   margin-top: 2rem;
 }
