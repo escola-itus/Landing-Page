@@ -43,6 +43,10 @@ a {
   margin-right: 0;
 }
 
+header * {
+  font-family: 'Anton', sans-serif;
+}
+
 header li {
   border-bottom: .15rem solid transparent;
   /* height: 4rem; */
@@ -154,7 +158,7 @@ header li {
 }
 
 .btn {
-  --width: 12rem;
+  --width: 15rem;
   --height: 3rem;
   border: 0;
   position: relative;
@@ -210,7 +214,7 @@ header li {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 105%;
   height: 100%;
   background: var(--green);
   border-radius: var(--height);

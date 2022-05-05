@@ -21,7 +21,7 @@
 }
 
 #banner .info {
-  width: 50%;
+  width: 60%;
 }
 
 #banner .info h1 {
@@ -49,6 +49,7 @@
   font-size: 1.15rem;
   border: none;
   transition: all .3s ease-in;
+  font-family: 'Anton', sans-serif;
 }
 
 @-webkit-keyframes hvr-ripple-out {

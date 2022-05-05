@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Put your description here.">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <title>ITUS Escola</title>
   </head>
   <body>
@@ -45,7 +51,7 @@
         </a> -->
         <div class="btn-container">
           <button class="btn">
-            <span class="btn-text">Conheça-nos</span>
+            <span class="btn-text">Aula experimental</span>
             <div class="icon-container">
               <div class="icon icon--left">
                 <svg>
@@ -65,8 +71,8 @@
     <section id="banner">
       <div class="section-container">
         <div class="info">
-          <h1>Aprender a <span>programar</span> nunca foi tão <span>divertido!</span></h1>
-          <p>Aqui seu filho aprende a programar de maneira didática e divertida, com uma didática voltada para crianças entre 7 a 15 anos.</p>
+          <h1>Veja seu filho <span>criando</span> novos projetos e habilidades com a <span>programação!</span></h1>
+          <p>Aprender a programar nunca foi tão divertido!</p>
         </div>
         <img class="image-animation" alt="Animação de criança mexendo no computador" src="./assets/itus-animation1.png">
       </div>
@@ -80,6 +86,28 @@
         </div>
       </div>
     </section>
+    <section class="section-container">
+      <h2>Por que seu <span>filho</span> deve <span>aprender a programar?</span></h2>
+      <p>A Itus é uma escola com a nova metodologia ativa, desenvolvida por profissionais da área, que leva o aluno a aprender brincando, jogando e transformando as próprias ideias em realidade!</p>
+      <ul class="problems">
+        <li>
+          <div>
+            <img src="/assets/phone.svg">
+          </div>
+          <h3>Conteúdo Consumido na Internet</h3>
+          <p>As crianças ficam de 3 a 5 horas por dia no celular jogando e usando as redes sociais.</p>
+        </li>
+        <li>
+          <div>
+            <img src="/assets/code.svg">
+          </div>
+          <h3>Transformação Digital</h3>
+          <p>A aumento das ofertas de emprego que exigem conhecimento em programação</p>
+        </li>
+      </ul>
+    </section>
+
+
     <div id="about" class="anchor"></div>
     <section class="section-container">
       <h2>Sobre a ITUS</h2>
@@ -145,8 +173,8 @@
     <div id="contact" class="anchor"></div>
     <section>
       <div class="section-container">
-        <h2>Venha <span>conhecer</span> a ITUS por meio de uma <span>aula experimental</span></h2>
-        <p>A Itus é uma escola com a nova metodologia ativa, desenvolvida por profissionais da área, que leva o aluno a aprender brincando, jogando e transformando as próprias ideias em realidade!</p>
+        <h2>Faça uma aula <span>gratuita</span></h2>
+        <p>Agende seu horário!</p>
         <form>
           <!-- <div class="wrapper-inputs"> -->
             <!-- <div class="input-container">
@@ -168,12 +196,69 @@
           <!-- Widget de link do Calendly - início -->
           <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
           <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-          <a href="" class="link-btn-section hvr-ripple-out" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidsonmarra/itus?hide_event_type_details=1&hide_gdpr_banner=1&text_color=07224b&primary_color=269912'});return false;">
+          <span class="link-btn-section hvr-ripple-out" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidsonmarra/itus?hide_event_type_details=1&hide_gdpr_banner=1&text_color=07224b&primary_color=269912'});return false;">
             <button class="btn-section">Venha marcar uma aula experimental!</button>
-          </a>
+          </span>
           <!-- Widget de link do Calendly - fim -->
           </div>
         </form>
+      </div>
+    </section>
+    <section>
+      <div class="section-container">
+        <h2>O que nossos <span>clientes</span> dizem</h2>
+        <p>Isso é o que os nossos clientes pensam sobre o nosso programa!</p>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper">
+              <!-- Slides -->
+              <li class="swiper-slide">
+                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="type">
+                  <img class="avatar" src="./assets/avatar1.png" >
+                  <p>João Pedro</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="type">
+                  <img class="avatar" src="./assets/avatar1.png" >
+                  <p>João Pedro</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="type">
+                  <img class="avatar" src="./assets/avatar1.png" >
+                  <p>João Pedro</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="type">
+                  <img class="avatar" src="./assets/avatar1.png" >
+                  <p>João Pedro</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="type">
+                  <img class="avatar" src="./assets/avatar1.png" >
+                  <p>João Pedro</p>
+                </div>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </ul>
       </div>
     </section>
     <a title="Whatsapp" href="https://api.whatsapp.com/send?phone=5531995929435" class="float" target="_blank">

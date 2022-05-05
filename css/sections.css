@@ -39,6 +39,39 @@
   color: var(--text-body);
 }
 
+.problems {
+  margin-top: 2rem;
+}
+
+.problems li {
+  margin-bottom: 2.5rem;
+}
+
+.problems li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-light);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.problems h3 {
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+  color: var(--blue);
+  font-size: 1.25rem;
+}
+
+.problems p {
+  color: var(--text-body);
+  font-size: 1rem;
+  margin-top: 0rem;
+  font-weight: 400;
+}
+
 .cards {
   width: 100%;
   display: flex;
@@ -63,6 +96,7 @@
   margin-bottom: 1.5rem;
   transition: all .3s ease-in;
 }
+
 .card:hover {
   cursor: pointer;
   border-color: var(--green);
@@ -157,5 +191,11 @@ form {
   }
   .calendly-mobile {
     display: block;
+  }
+  .section-container p {
+    width: 100%;
+  }
+  .problems {
+    flex-direction: column;
   }
 }
