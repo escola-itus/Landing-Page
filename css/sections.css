@@ -195,6 +195,7 @@ form {
   }
   .calendly-mobile {
     display: block;
+    margin-top: 2rem;
   }
   .section-container p {
     width: 100%;

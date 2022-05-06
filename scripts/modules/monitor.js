@@ -3,7 +3,8 @@ export const showGif = (openButton, gifContent) =>{
   const openBtn = document.getElementById(openButton),
   gifContainer = document.getElementById(gifContent),
   selectContainer = document.getElementsByClassName('container-select')[0],
-  gameLogo = document.getElementsByClassName('game-logo')[0];
+  gameLogo = document.getElementsByClassName('game-logo')[0],
+  mouse = document.getElementById('click');
   
   
   if(openBtn && gifContainer){
@@ -11,7 +12,7 @@ export const showGif = (openButton, gifContent) =>{
       selectContainer.classList.add('hide')
       gameLogo.classList.add('hide')
       gifContainer.classList.add('show-gif')
-      
+      mouse.classList.add('hide')
     })
   }
 }
