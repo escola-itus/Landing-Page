@@ -206,8 +206,6 @@ form {
 
 .price-card ul {
   flex-direction: column;
-  align-items: flex-start;
-  margin: 1.5rem 0;
   align-items: center;
 }
 
@@ -247,7 +245,6 @@ form {
 }
 
 .price h3 {
-  width: 100%;
   font-size: 1.25rem;
   margin-right: 1rem;
 }
