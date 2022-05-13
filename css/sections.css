@@ -13,7 +13,7 @@
   margin: 0 auto;
   margin-top: 2.5rem;
   text-align: center;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   align-items: center;
 }
 
@@ -201,6 +201,7 @@ form {
   color: var(--green);
   font-weight: bold;
   margin-top: 0;
+  margin-left: 1rem;
 }
 
 .price-card ul {
@@ -305,32 +306,16 @@ form {
   width: 100%;
 }
 
-.accordion {
-  background-color: var(--shape);
-  color: var(--blue);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-size: 1rem;
-  font-weight: bold;
-  /* border-bottom: .5px solid var(--blue); */
-}
-
 .faq-container li:first-child .accordion{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.faq-container li:last-child .accordion{
+.faq-container li:last-child .accordion {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-accordion, .accordion:hover {
   background-color: #00000012;
 }
@@ -344,10 +329,27 @@ form {
   z-index: 9;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+.active-item:first-child {
+  border-radius:1rem;
+}
+
+.accordion {
+  background-color: var(--shape);
+  width: 100%;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: var(--shape);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -360,18 +362,39 @@ form {
   width: 100%;
   text-align: left;
   padding: 1rem 0;
+  text-align: left;
+  font-size: 1rem;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: var(--green);
-  float: right;
-  margin-left: 5px;
+.accordion img {
+  display: flex;
+  flex-direction: row;
 }
 
-.active-accordion:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+.accordion p {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion img {
+  transition: 0.4s;
+  transform: rotate(-90deg);
+  fill: var(--green);
+}
+
+.accordion img {
+  width: 2rem;
+}
+
+.active-accordion {
+  background-color: #00000012;
+}
+
+.active-accordion img {
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1080px) {
