@@ -120,7 +120,7 @@ header li {
 }
 
 .nav-list.active {
-  width: 50vw;
+  width: 65vw;
   transform: translateX(0);
 }
 
