@@ -14,6 +14,15 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223735546-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-223735546-1');
+    </script>
     <title>ITUS Escola</title>
   </head>
   <body>
@@ -90,14 +99,16 @@
       <ul class="problems">
         <li>
           <div>
-            <img alt="Ícone de um Smart Phone" src="./assets/phone.svg">
+            <lottie-player src="https://assets3.lottiefiles.com/datafiles/uLmeWFRtCwUdQSm/data.json"  background="transparent"  speed="1"  style="width:70px; height: 70px;"  loop autoplay></lottie-player>
+
           </div>
           <h3>Conteúdo Consumido na Internet</h3>
           <p>As crianças ficam de 3 a 5 horas por dia no celular apenas jogando e usando as redes sociais.</p>
         </li>
         <li>
           <div>
-            <img alt="Ícone de um código" src="./assets/code.svg">
+            <!-- <img alt="Ícone de um código" src="./assets/code.svg"> -->
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_zwt8pdyi.json"  background="transparent"  speed="1"  style="width:40px; height: 40px;"  loop autoplay></lottie-player>
           </div>
           <h3>Transformação Digital</h3>
           <p>A aumento das ofertas de emprego que exigem conhecimento em programação</p>
@@ -167,7 +178,7 @@
           <div class="swiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/frBAIZMnrJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="type">
                   <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
                   <p>João Pedro</p>
@@ -227,14 +238,15 @@
             <li>24 aulas no conforto da sua casa</li>
             <li>50 a 100 minutos de aula por semana</li>
             <li>Turmas reduzidas</li>
+            <li>R$ 37,90 por aula</li>
           </ul>
-          <a href="#" target="_blank" class="resume">Conheça mais sobre o currículo aqui</a>
+          <a href="https://drive.google.com/file/d/1i4T-mESu40yGmSu9qa5NXhRjCVOv-cFX/view?usp=sharing" target="_blank" class="resume">Conheça mais sobre o currículo aqui</a>
           <div class="price">
             <h3>R$ 899,40</h3>
             <p>R$ 1000,00</p>
           </div>
           <p class="price-info">ou 6x de R$149,90 </p>
-          <button class="price-btn">Agende seu horário já!</button>
+          <button class="calendly price-btn">Agende seu horário já!</button>
         </div>
     </section>
 

@@ -38,7 +38,6 @@ ul {
 
 a {
   text-decoration: none;
-  
 } a:last-child {
   margin-right: 0;
 }
@@ -52,7 +51,7 @@ header li {
   /* height: 4rem; */
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   font-size: 1.5rem;
   background-image: linear-gradient(var(--green), var(--green));
   background-size: 0 .15rem, auto;
