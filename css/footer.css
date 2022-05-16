@@ -2,6 +2,8 @@
   width: 100%;
   background-color: var(--blue);
   border-top: .5rem solid var(--green);
+  z-index: 1000;
+  position: relative;
 }
 
 .footer-content {
@@ -13,7 +15,7 @@
 }
 
 .footer-content img {
-  width: 8rem;
+  width: 10rem;
 }
 
 .footer-content p {
