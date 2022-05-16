@@ -5,6 +5,7 @@
 @import "modal.css";
 @import "swiper.css";
 @import "monitor.css";
+@import "footer.css";
 
 @font-face {
   font-family: 'Gagalin';
@@ -19,6 +20,7 @@
   --green-light: rgba(38, 153, 18, 0.6);
   --text-title: #363F5F;
   --text-body: #464646;
+  --text-footer: #e4e4e4;
   --shape: #FFFFFF;
   --whatsapp: #25d366;
   --whatsapp-dark: #1ba84f;
