@@ -14,47 +14,13 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223735546-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-223735546-1');
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQH0JE32DC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-HQH0JE32DC');
-    </script>
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '186629167002682');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=186629167002682&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    
     <title>ITUS Escola</title>
   </head>
   <body>
     <header id="header">
       <div class="header-container">
-        <a href="#"><img alt="ITUS - Logo" class="logo" src="./assets/logo.svg"></a>
+        <a href="#"><img alt="ITUS - Logo" class="logo lazy" src="./assets/logo.svg"></a>
         <nav class="nav-desktop">
           <ul>
             <li><a href="#games">Crie seus Games</a></li>
@@ -74,13 +40,6 @@
             <li><a href="#faq">Perguntas Frequentes</a></li>
           </ul>
         </nav>
-        <!-- <a class="btn-go" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Conheça-nos
-        </a> -->
         <div class="btn-container">
           <button class="btn calendly" >
             <span class="btn-text">Aula experimental</span>
@@ -106,7 +65,7 @@
           <h1>Veja seu filho <span>criando</span> novos projetos e habilidades com a <span>programação!</span></h1>
           <p>Aprender a programar nunca foi tão divertido!</p>
         </div>
-        <img class="image-animation" alt="Animação de criança mexendo no computador" src="./assets/itus-animation1.png">
+        <img class="image-animation" alt="Animação de criança mexendo no computador" src="./assets/itus-animation1.svg">
       </div>
       <a href="#" class="calendly link-btn-section hvr-ripple-out">
         <button class="btn-section">Venha marcar uma aula experimental!</button>
@@ -125,7 +84,7 @@
       <ul class="problems">
         <li>
           <div>
-            <lottie-player src="https://assets3.lottiefiles.com/datafiles/uLmeWFRtCwUdQSm/data.json"  background="transparent"  speed="1"  style="width:70px; height: 70px;"  loop autoplay></lottie-player>
+            <lottie-player src="https://assets3.lottiefiles.com/datafiles/uLmeWFRtCwUdQSm/data.json"  background="transparent"  speed="1.5"  style="width:70px; height: 70px;" class="lazy" loop autoplay></lottie-player>
 
           </div>
           <h3>Conteúdo Consumido na Internet</h3>
@@ -133,8 +92,7 @@
         </li>
         <li>
           <div>
-            <!-- <img alt="Ícone de um código" src="./assets/code.svg"> -->
-            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_zwt8pdyi.json"  background="transparent"  speed="1"  style="width:40px; height: 40px;"  loop autoplay></lottie-player>
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_zwt8pdyi.json" class="lazy" background="transparent"  speed="1.5"  style="width:40px; height: 40px;" loop autoplay></lottie-player>
           </div>
           <h3>Transformação Digital</h3>
           <p>A aumento das ofertas de emprego que exigem conhecimento em programação</p>
@@ -147,30 +105,39 @@
       <p>Por que escolher a Itus?</p>
       <article>
         <div class="stand">
-            <div class="monitor">
-              <div>
-                <img alt="Logo da ITUS - Escola para jogo" class="game-logo" src="./assets/logo3.png">
-                <ul class="container-select">
-                  <li>
-                    <button id="open-gif" class="btn-section">
-                      Faça projetos
-                      <lottie-player id="click" src="https://assets2.lottiefiles.com/packages/lf20_5jiizri0.json"  background="transparent"  speed="1"  style="width:50px; height: 50px;"  loop autoplay></lottie-player>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="btn-section">
-                      Mundo digital
-                    </button>
-                  </li>
-                </ul>
-                <div id="gif-container">
-                  <img alt="Gif de um programador" class="gif" src="./assets/programming.gif">
+          <div class="monitor lazy">
+            <div>
+              <img alt="Logo da ITUS - Escola para jogo" class="game-logo" loading="lazy" src="./assets/logo3.png" width="56px" height="56px">
+              <ul class="container-select">
+                <li>
+                  <button id="open-gif" class="btn-section">
+                    Faça projetos
+                    <lottie-player id="click" class="lazy" src="https://assets2.lottiefiles.com/packages/lf20_5jiizri0.json"  background="transparent"  speed="1"  style="width:50px; height: 50px;"  loop autoplay></lottie-player>
+                  </button>
+                </li>
+                <li>
+                  <button id="open-gif2" class="btn-section">
+                    Mundo digital
+                  </button>
+                </li>
+              </ul>
+              <div id="gif-container2">
+                <video alt="Gif de um programador" preload="none" onclick="this.paused ? this.play() : this.pause();" class="gif lazy" src="./assets/animacao2.mp4" loop ></video>
+                <button class="close-gif">
+                  <i class="fa fa-times close"></i>
+                </button>
+              </div>
+              <div id="gif-container">
+                  <video alt="Gif de um programador" preload="none" onclick="this.paused ? this.play() : this.pause();" class="gif lazy" loop poster="">
+                    <source src="./assets/animacao1.mp4" type="video/mp4">
+                  </video>
                   <button class="close-gif">
                     <i class="fa fa-times close"></i>
                   </button>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       <article>
     </section>
@@ -202,40 +169,33 @@
         <h2>O que nossos <span>clientes</span> dizem</h2>
         <p>Isso é o que os nossos clientes pensam sobre o nosso programa!</p>
           <div class="swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/frBAIZMnrJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <ul class="swiper-wrapper" role="tablist">
+              <li class="swiper-slide" role="presentation">
+                <iframe class="video lazy" src="https://www.youtube.com/embed/Lc1MStWfcWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="type">
-                  <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
+                  <img alt="Avatar" class="avatar lazy" src="./assets/avatar1.png" >
                   <p>João Pedro</p>
                 </div>
               </li>
-              <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <li class="swiper-slide" role="presentation">
+                <iframe class="video lazy" src="https://www.youtube.com/embed/63wXUjK8ry0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="type">
-                  <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
-                  <p>João Pedro</p>
+                  <img alt="Avatar" class="avatar lazy" src="./assets/avatar1.png" >
+                  <p>Thales Henrique</p>
                 </div>
               </li>
-              <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <li class="swiper-slide" role="presentation">
+                <iframe class="video lazy" src="https://www.youtube.com/embed/Z4ZHOZCZdYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="type">
-                  <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
-                  <p>João Pedro</p>
+                  <img alt="Avatar" class="avatar lazy" src="./assets/avatar1.png" >
+                  <p>Kelly Castro</p>
                 </div>
               </li>
-              <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <li class="swiper-slide" role="presentation">
+                <iframe class="video lazy" src="https://www.youtube.com/embed/sBmLB7vcasU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="type">
-                  <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
-                  <p>João Pedro</p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <iframe class="video" src="https://www.youtube.com/embed/3vNPZ1Gle6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="type">
-                  <img alt="Avatar" class="avatar" src="./assets/avatar1.png" >
-                  <p>João Pedro</p>
+                  <img alt="Avatar" class="avatar lazy" src="./assets/avatar1.png" >
+                  <p>Rachel Sifoleli</p>
                 </div>
               </li>
             </ul>
@@ -258,20 +218,20 @@
         <div class="price-card">
           <div class="title">
             <h3>Lógica de Programação</h3>
-            <p>10% de desconto</p>
+            <p>20% de desconto</p>
           </div>
           <ul>
             <li>24 aulas no conforto da sua casa</li>
             <li>50 a 100 minutos de aula por semana</li>
             <li>Turmas reduzidas</li>
-            <li>R$ 37,90 por aula</li>
+            <li>R$ 46,75 por aula</li>
           </ul>
           <a href="https://drive.google.com/file/d/1i4T-mESu40yGmSu9qa5NXhRjCVOv-cFX/view?usp=sharing" target="_blank" class="resume">Conheça mais sobre o currículo aqui</a>
           <div class="price">
-            <h3>R$ 899,40</h3>
-            <p>R$ 1000,00</p>
+            <h3>R$ 1.222,40</h3>
+            <p>R$ 1.400,00</p>
           </div>
-          <p class="price-info">ou 6x de R$149,90 </p>
+          <p class="price-info">ou 6x de R$ 187,00 </p>
           <button class="calendly price-btn">Agende seu horário já!</button>
         </div>
     </section>
@@ -357,9 +317,9 @@
           "Dar asas à criatividade é semear o futuro"
         </p>
         <div class="social-icons">
-          <i class="fa fa-whatsapp"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-envelope"></i>
+          <a aria-label="Whatsapp" href="https://api.whatsapp.com/send/?phone=5531995929435&text=Ol%C3%A1%2C+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+as+aulas+de+programa%C3%A7%C3%A3o+para+crian%C3%A7as%21&app_absent=0"><i class="fa fa-whatsapp"></i></a>
+          <a aria-label="Instagram" href="https://www.instagram.com/itus_escola/"><i class="fa fa-instagram"></i></a>
+          <a aria-label="E-mail" href="mailto:itus.escola@gmail.com?subject=Visita%20ao%20Site&body=Ol%C3%A1%20time%20da%20ITUS%2C%0D%0A%0D%0AVisitei%20o%20site%20de%20voc%C3%AAs%20e%20estou%20entrando%20em%20contato%20para..."><i class="fa fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -373,5 +333,41 @@
     </symbol>
   </svg>
   <script type="module" src="./scripts/main.js"></script>
+  <script src="dist/lazyframe.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223735546-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-223735546-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQH0JE32DC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQH0JE32DC');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script >
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '186629167002682');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=186629167002682&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </html>

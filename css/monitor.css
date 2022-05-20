@@ -4,7 +4,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-img {
+img, video {
   width:500px;
 }
 .monitor {
@@ -46,8 +46,13 @@ img {
   left: 110px;
 }
 
+.stand .lazy {
+  background-image: none;
+  background-color: var(--blue);
+}
+
 .monitor div {
-  background-image: url('../assets/background.jpg');
+  background-image: url('../assets/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -109,6 +114,11 @@ img {
   position: relative;
 }
 
+#gif-container2 {
+  display: none;
+  position: relative;
+}
+
 .hide {
   display: none !important;
 }
@@ -123,6 +133,11 @@ img {
   top: .5rem;
   background: none;
   border: none;
+  z-index: 990;
+}
+
+.close-gif .close {
+  color: var(--blue);
 }
 
 .gif {

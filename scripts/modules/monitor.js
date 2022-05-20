@@ -17,11 +17,10 @@ export const showGif = (openButton, gifContent) =>{
   }
 }
 showGif('open-gif','gif-container');
-// showModal('open-modal2','modal-container2');
+showGif('open-gif2','gif-container2');
 
 /*=============== CLOSE MODAL ===============*/
-export const closeGif = document.getElementsByClassName('close-gif')[0]
-// export const closeBtn2 = document.querySelectorAll('.close-modal2')
+export const closeGif = document.getElementsByClassName('close-gif');
 
 export function closeGifContainer(gifContent){
   const gifContainer = document.getElementById(gifContent),
@@ -31,9 +30,6 @@ export function closeGifContainer(gifContent){
   gameLogo.classList.remove('hide');
   gifContainer.classList.remove('show-gif');
 }
-// export function closeModal2(){
-//   const modalContainer = document.getElementById('modal-container2')
-//   modalContainer.classList.remove('show-modal')
-// }
-closeGif.addEventListener('click', () => closeGifContainer('gif-container'));
-// closeBtn.forEach(c => c.addEventListener('click', closeModal2))
+
+closeGif[0].addEventListener('click', () => closeGifContainer('gif-container2'));
+closeGif[1].addEventListener('click', () => closeGifContainer('gif-container'));
