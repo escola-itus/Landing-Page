@@ -25,13 +25,13 @@
 }
 
 #banner .info h1 {
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   font-size: 2.5rem;
   color: var(--blue);
 } 
 
 #banner .info h1 span {
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   color: var(--green);
 }
 

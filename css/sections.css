@@ -18,7 +18,7 @@
 }
 
 .section-container h2 {
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   font-size: 2.5rem;
   color: var(--blue);
   width: 60%;
@@ -26,7 +26,7 @@
 }
 
 .section-container span {
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   font-size: 2.5rem;
   color: var(--green);
 }
@@ -191,7 +191,7 @@ form {
 
 .price-card .title h3 {
   font-size: 2rem;
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   color: var(--blue-light);
 }
 
@@ -239,7 +239,7 @@ form {
   align-items: center;
   width: 25%;
   white-space: nowrap;
-  font-family: 'Gagalin';
+  font-family: 'Gagalin', sans-serif;
   color: var(--green);
   font-weight: bold;
 }

@@ -52,7 +52,7 @@ img, video {
 }
 
 .monitor div {
-  background-image: url('../assets/background.svg');
+  background-image: url('../assets/background-min.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
