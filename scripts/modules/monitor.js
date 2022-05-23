@@ -13,6 +13,13 @@ export const showGif = (openButton, gifContent) =>{
       gameLogo.classList.add('hide')
       gifContainer.classList.add('show-gif')
       mouse.classList.add('hide')
+      const videos = document.getElementsByClassName('gif');
+      videos[0].pause();
+      videos[0].load();
+      videos[0].play();
+      videos[1].pause();
+      videos[1].load();
+      videos[1].play();
     })
   }
 }
