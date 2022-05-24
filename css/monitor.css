@@ -143,7 +143,7 @@ img, video {
 .gif {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #click {
@@ -160,8 +160,8 @@ img, video {
     display: none;
   }
   .monitor {
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
     /* overflow-y:scroll; */
     border: solid 1em #333;
     border-radius:.5em;
