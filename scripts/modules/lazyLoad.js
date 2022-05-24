@@ -47,14 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+function sleep (ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-setTimeout(function(){
-  var containers = document.querySelectorAll('.elasticMedia-container[data-src]');
-  for (var i = 0; i < containers.length; i++) {
+async function getVideo() {
+  await sleep(1)
+  const containers = document.querySelectorAll('.elasticMedia-container[data-src]');
+  for (let i = 0; i < containers.length; i++) {
     var src = containers[i].getAttribute('data-src');
-    console.log(containers[i])
     containers[i].innerHTML = `<iframe class="video elasticMedia-container" src="${src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   }
-  
+}
 
-}, 500);
+setTimeout(getVideo, 500);
