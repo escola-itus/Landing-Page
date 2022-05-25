@@ -4,7 +4,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-img, video {
+video {
   width:500px;
 }
 .monitor {
@@ -132,7 +132,7 @@ img, video {
   top: .5rem;
   background: none;
   border: none;
-  z-index: 990;
+  z-index: 2;
 }
 
 .close-gif .close {
