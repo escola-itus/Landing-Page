@@ -5,6 +5,12 @@ import './modules/monitor.js';
 import './modules/calendly.js';
 import './modules/accordion.js';
 import './modules/lazyLoad.js';
+import './modules/form.js';
+
+var phoneMask = IMask(
+  document.getElementById('phone'), {
+    mask: '(31) 0 0000-0000'
+  });
 
 header.init();
 mobileNavbar.init();

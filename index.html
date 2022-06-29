@@ -42,7 +42,7 @@
           </ul>
         </nav>
         <div class="btn-container">
-          <button class="btn calendly" >
+          <a href="#form" class="btn calendly" >
             <span class="btn-text">Aula experimental</span>
             <div class="icon-container">
               <div class="icon icon--left">
@@ -56,7 +56,7 @@
                 </svg>
               </div>
             </div>
-          </button>
+          </a>
         </div>
       </div>
     </header>
@@ -68,7 +68,7 @@
         </div>
         <img class="image-animation" alt="Animação de criança mexendo no computador" src="./assets/itus-animation1-min.png">
       </div>
-      <a href="#" class="calendly link-btn-section hvr-ripple-out">
+      <a href="#form" class="calendly link-btn-section hvr-ripple-out">
         <button class="btn-section">Venha marcar uma aula experimental!</button>
       </a>
       <div class='scrolldown'>
@@ -142,27 +142,30 @@
         </div>
       <article>
     </section>
+    <div id="form" class="anchor"></div>
    
     <section>
       <div class="section-container">
         <h2>Faça uma aula <span>gratuita</span></h2>
-        <p>Agende seu horário!</p>
-        <div class="calendly-desktop">
-          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/itus_escola/aula-experimental?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3f9a15" style="min-width:320px;height:650px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
-        </div>
-        <div class="calendly-mobile">
-        <!-- Widget de link do Calendly - início -->
-          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-          <span class="calendly link-btn-section hvr-ripple-out">
-            <button class="calendly btn-section">Venha marcar uma aula experimental!</button>
-          </span>
-        <!-- Widget de link do Calendly - fim -->
-        </div>
-      </div>
+        <p>Deixe seu e-mail e entraremos em contato para agendar uma primeira aula gratuitamente!</p>
+        <form id="my-form" action="https://formspree.io/f/mvolnlba"
+        method="POST" class="wrapper-inputs">
+          <div class="input-container">
+            <input type="text" id="name" name="name" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="name" class="form__label">Nome</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="email" name="email" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="email" class="form__label">E-mail</label>
+          </div> 
+          <div class="input-container">
+            <input type="text" id="phone" name="phone" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="phone" class="form__label" required>Telefone</label>
+          </div> 
+          <button type="submit" id="my-form-button" class="link-btn-section hvr-ripple-out btn-section">Enviar</button>
+          <p id="my-form-status"></p>
+          
+        </form>
     </section>
     <div id="feedback" class="anchor"></div>
     <section>
@@ -219,7 +222,7 @@
         <div class="price-card">
           <div class="title">
             <h3>Lógica de Programação</h3>
-            <p>20% de desconto</p>
+            <p>O melhor para seu filho!</p>
           </div>
           <ul>
             <li>24 aulas no conforto da sua casa</li>
@@ -229,10 +232,10 @@
           </ul>
           <a href="https://drive.google.com/file/d/1i4T-mESu40yGmSu9qa5NXhRjCVOv-cFX/view?usp=sharing" target="_blank" class="resume">Conheça mais sobre o currículo aqui</a>
           <div class="price">
-            <h3>R$ 1.222,40</h3>
-            <p>R$ 1.400,00</p>
+            <h3>R$ 187,00</h3>
+            <!-- <p>R$ 1.400,00</p> -->
           </div>
-          <p class="price-info">ou 6x de R$ 187,00 </p>
+          <!-- <p class="price-info">ou 6x de R$ 187,00 </p> -->
           <button class="calendly price-btn">Agende seu horário já!</button>
         </div>
     </section>
@@ -334,6 +337,7 @@
     </symbol>
   </svg>
   <script type="module" src="./scripts/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223735546-1"></script>

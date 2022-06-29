@@ -130,12 +130,32 @@ form {
 
 .wrapper-inputs {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-form-button {
+  margin-top: 1.75rem;
+}
+
+#my-form-status.error {
+  color: red;
+}
+
+.wrapper-inputs a:hover {
+  cursor: pointer;
+}
+
+.name-wrapper {
+  display: flex;
   justify-content: space-between;
+  width: 48%;
 }
 
 .input-container {
   position: relative;
   width: 48%;
+  margin-top: 1rem;
 }
 
 .form__input {
@@ -410,10 +430,16 @@ form {
     display: block;
     margin-top: 2rem;
   }
-  .section-container p {
+  .section-container p, .input-container {
     width: 100%;
   }
   .problems {
     flex-direction: column;
+  }
+  .name-wrapper {
+    width: 100%;
+  }
+  .name-wrapper .input-container {
+    width: 48%;
   }
 }
