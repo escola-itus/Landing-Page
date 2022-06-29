@@ -139,7 +139,7 @@ form {
 }
 
 #my-form-status.error {
-  color: red;
+  color: var(--);
 }
 
 .wrapper-inputs a:hover {
