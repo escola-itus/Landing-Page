@@ -9,7 +9,7 @@ import './modules/form.js';
 
 var phoneMask = IMask(
   document.getElementById('phone'), {
-    mask: '(31) 0 0000-0000'
+    mask: '(00) 0 0000-0000'
   });
 
 header.init();
